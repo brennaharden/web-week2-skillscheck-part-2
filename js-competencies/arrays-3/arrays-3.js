@@ -12,6 +12,10 @@ var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
 //Code here
 
+const sunset = () => {
+    sunsetColors[0] = "blue"
+    return sunsetColors
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -22,7 +26,12 @@ var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 
 //Code here
-
+const sunrise = () => {
+    let newColors = sunriseColors.map(function(elem, index, arr){
+        arr[0] = "green"
+    })
+    return newColors
+    }
 
 //////////////////PROBLEM 3////////////////////
 
