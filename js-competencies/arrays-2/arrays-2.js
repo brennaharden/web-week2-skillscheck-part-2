@@ -10,7 +10,10 @@
 //addMoreDucks should return the array.
 
 //Code here
-
+const addMoreDucks = (array) => {
+    array.length > 4 ? array[2] = `42 ducks` : null
+    return array
+}
 
 //////////////////PROBLEM 2////////////////////
 
@@ -19,7 +22,10 @@
 //the 3rd element of the array. cutItOut should return the array.
 
 //Code here
-
+const cutItOut = (array) => {
+    array.length > 4 ? array.splice(2, 1) : null
+    return array
+}
 
 //////////////////PROBLEM 3////////////////////
 
@@ -28,4 +34,11 @@
 //changeName should return the array.
 
 //Code here
-
+const changeName = (array) => {
+    array.forEach(function(elem, index){
+        if(array[index] === 'Tolkn'){
+            array[index] = 'Tolkien'
+        }
+    })
+    return array
+}
